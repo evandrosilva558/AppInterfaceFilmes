@@ -1,7 +1,15 @@
   // Importando componentes react.
 import React, { useState } from 'react';
   // Importando componentes react-native.
-import { View, ScrollView, Text, StyleSheet, Dimensions, ImageBackground } from 'react-native';
+import { View, 
+  ScrollView, 
+  Text, StyleSheet, 
+  Dimensions, 
+  ImageBackground, 
+  TextInput, 
+  TouchableOpacity } from 'react-native';
+
+import { FontAwesome } from '@expo/vector-icons';
 
 const { width: screenWidth, height: screenHeight } = Dimensions.get('window');
 
@@ -57,6 +65,23 @@ export default function App() {
           style={styles.imgBg}
           blurRadius={8} // desfoca a imagem de fundo
           >
+            <View style={styles.viewSearch}>
+              <TextInput
+              style={styles.input}
+              placeholder="Busca..."
+              />
+              <TouchableOpacity style={styles.icon}>
+                <FontAwesome name="search" color="#000" size={20}/>
+              </TouchableOpacity>
+            </View>
+
+            <Text style={styles.titulo}>
+              Lançamentos recentes !
+            </Text>
+
+            <View style={styles.slideView}> 
+
+            </View>
 
           </ImageBackground>
         </View>
@@ -64,7 +89,7 @@ export default function App() {
     </ScrollView>
   );
 }
-  // Váriavél de estilos.
+  // Criação de estilos.
 const styles = StyleSheet.create({
   container:{
     flex: 1
@@ -77,6 +102,41 @@ const styles = StyleSheet.create({
     opacity: 1,
     justifyContent: "flex-start",
     backgroundColor: '#000',
+  },
+  viewSearch: {
+    marginTop: 20,
+    backgroundColor: '#fff',
+    elevation: 10,
+    borderRadius: 7,
+    marginVertical: 10,
+    width: '95%',
+    flexDirection: 'row',
+    alignSelf: 'center',
+    paddingHorizontal: 5,
+  },
+  input: {
+    width: '90%',
+    padding: 13,
+    paddingLeft: 20,
+    fontSize: 18,
+  },
+  icon: {
+    position: 'absolute',
+    right: 14,
+    top: 18,
+  },
+  titulo: {
+    color: '#fff',
+    margin: 15,
+    alignSelf: 'center',
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  slideView: {
+    width: '100%',
+    height: 350,
+    justifyContent: 'center',
+    alignItems: 'center',
   }
 
 });
