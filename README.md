@@ -1,5 +1,6 @@
 # aplicativo de filmes
 ## Tela de um aplicativo de filmes
+## feito em React-Native no Expo.
 
 ![seleção do filme](https://github.com/evandrosilva558/AppInterfaceFilmes/blob/master/Screenshot_20210530-164607.png)
 
