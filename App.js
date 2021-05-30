@@ -66,68 +66,62 @@ export default function App() {
 
           <View style={styles.carouselImg} key="0">
             <TouchableOpacity>
-            
             <Image
             style={styles.viewImage}
             source={{uri: 'https://sujeitoprogramador.com/wp-content/uploads/2020/05/background.jpg'}}
             />
             </TouchableOpacity>
-            <Text style={styles.carouselText}>primeiro</Text>
+            <Text style={styles.carouselText}>O justiceiro</Text>
           </View>
 
           <View style={styles.carouselImg} key="1">
-          <TouchableOpacity>
-            
+          <TouchableOpacity>           
             <Image
             style={styles.viewImage}
             source={{uri: 'https://sujeitoprogramador.com/wp-content/uploads/2020/05/badboy.jpg'}}
             />
             </TouchableOpacity>
-            <Text style={styles.carouselText}>segundo</Text>
+            <Text style={styles.carouselText}>Meninos maus</Text>
           </View>
 
           <View style={styles.carouselImg} key="2">
-          <TouchableOpacity>
-            
+          <TouchableOpacity>            
             <Image
             style={styles.viewImage}
             source={{uri: 'https://sujeitoprogramador.com/wp-content/uploads/2020/05/blackwidow.jpg'}}
             />
             </TouchableOpacity>
-            <Text style={styles.carouselText}>terceiro</Text>
+            <Text style={styles.carouselText}>Viúva negra</Text>
           </View>
 
           <View style={styles.carouselImg} key="3">
-          <TouchableOpacity>
-            
+          <TouchableOpacity>           
             <Image
             style={styles.viewImage}
             source={{uri: 'https://sujeitoprogramador.com/wp-content/uploads/2020/05/topgun.jpeg'}}
             />
             </TouchableOpacity>
-            <Text style={styles.carouselText}>quarto</Text>
+            <Text style={styles.carouselText}>Melhor arma Maverick</Text>
           </View>
 
           <View style={styles.carouselImg} key="4">
-          <TouchableOpacity>
-            
+          <TouchableOpacity>            
             <Image
             style={styles.viewImage}
             source={{uri: 'https://sujeitoprogramador.com/wp-content/uploads/2020/05/blood.jpg'}}
             />
             </TouchableOpacity>
-            <Text style={styles.carouselText}>quinto</Text>
+            <Text style={styles.carouselText}>Injetado de sangue</Text>
           </View>
 
           <View style={styles.carouselImg} key="5">
-          <TouchableOpacity>
-            
+          <TouchableOpacity>            
             <Image
             style={styles.viewImage}
             source={{uri: 'https://sujeitoprogramador.com/wp-content/uploads/2020/05/freeguy.jpg'}}
             />
             </TouchableOpacity>
-            <Text style={styles.carouselText}>sexto</Text>
+            <Text style={styles.carouselText}>Cara livre</Text>
           </View>
 
         </ViewPager>
@@ -179,7 +173,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#000',
   },
   viewSearch: {
-    marginTop: 20,
+    marginTop: 25,
     backgroundColor: '#fff',
     elevation: 10,
     borderRadius: 7,
